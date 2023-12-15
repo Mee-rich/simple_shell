@@ -35,8 +35,8 @@ int main(int ac, char **av)
 		}
 		comdat->readfd = fd;
 	}
-	populate_envList(comdat);
-	read_hist(comdat);
+	fill_envList(comdat);
+	rd_hist(comdat);
 	sh(comdat, av);
 	return (EXIT_SUCCESS);
 }

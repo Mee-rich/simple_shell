@@ -200,7 +200,7 @@ void free_info(com_d *, int);
 /* environ.c */
 char *_getenv(com_d *, const char *);
 int _myenv(com_d *);
-int _setenv(com_d *);
+int _mysetenv(com_d *);
 int _myunsetenv(com_d *);
 int fill_envList(com_d *);
 
@@ -213,7 +213,7 @@ int _setenv(com_d *, char *, char *);
 char *get_history_file(com_d *comdat);
 int write_history(com_d *comdat);
 int read_history(com_d *comdat);
-int buildHist__list(com_d *comdat, char *buf, int lineCount);
+int buildHist__list(com_d *comdat, char *buff, int lineCount);
 int renumber_history(com_d *comdat);
 
 

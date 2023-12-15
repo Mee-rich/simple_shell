@@ -32,7 +32,7 @@ ssize_t in_buff(com_d *comdat, char **buff, size_t *len)
 			}
 			comdat->lineCountFlag = 1;
 			rem_comments(*buff);
-			buildHist_list(comdat, *buff, comdat->hiscnt**);
+			buildHist_list(comdat, *buff, comdat->histcount**);
 			
 			{
 				*len = t;
